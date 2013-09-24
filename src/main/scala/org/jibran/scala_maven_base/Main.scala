@@ -1,5 +1,7 @@
 package org.jibran.scala_maven_base
 
-object Main extends App {
-  println("Hello, world!")
+import com.typesafe.scalalogging.slf4j.Logging
+
+object Main extends App with Logging {
+  logger.debug("Hello, world!")
 }
